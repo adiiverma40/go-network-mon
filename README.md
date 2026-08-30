@@ -1,4 +1,4 @@
-# Go Network Mon
+<h1 align="center">Go Network Mon</h1>
 A Network monitor, That monitors your network speed, Ping, And other stats and Much more. Made in Go-Lang.
 ```text 
 Go Network Mon, Use Ping, It`s Super effective.
