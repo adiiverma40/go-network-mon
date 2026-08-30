@@ -4,9 +4,6 @@ A Network monitor, That monitors your network speed, Ping, And other stats and M
 Go Network Mon, Use Ping, It`s Super effective.
 ```
 
-```
-```
-
 > [!note]
 > The name is inspired by Pokémon.
 
