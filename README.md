@@ -15,3 +15,7 @@ Go Network Mon, Use Ping, It`s Super effective.
 - **Dashboard**: A dashboard for the stats and visualize the result.
 - **Docker**: Easily depolyable by Docker.
 - **Re-connect Network**: Some router has a timeout in which we have to Re-Authenticate to use network. Automate it.
+
+
+## Ambitious Feature:
+- **Machine Learning**: A ML model that will be trainned on the data to predict the correct network time frame for the next day or today. 
