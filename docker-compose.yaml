@@ -1,0 +1,7 @@
+services:
+  go-network-mon:
+    build: ./
+    container_name: go-network-mon
+    restart: unless-stopped
+    tty: true 
+    stdin_open: true

@@ -10,6 +10,9 @@ Go Network Mon, Use Ping, It`s Super effective.
 > The name is inspired by Pokémon.
 
 
+> [!important]
+> This project is primary build to be hosted by docker and used in linux. I do not know how to support windows.
+
 ## Features
 - **Telegram notification**: Notify you using Telegram if a bad internet speed is found.
 - **Dashboard**: A dashboard for the stats and visualize the result.

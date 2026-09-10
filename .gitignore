@@ -27,6 +27,16 @@ go.work.sum
 # env file
 .env
 
+# Binary Files 
+/main
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+
+
 # Editor/IDE
 # .idea/
 # .vscode/
