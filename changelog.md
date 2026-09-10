@@ -1,5 +1,15 @@
 # Changelog
 
+## [unreleased]
+
+### Changes:
+- Changed the repo name to small letters to stop failing the workflow
+- remove `/backend` from docker tags
+
+
+
+---
+
 ## 1.0.0
 
 
