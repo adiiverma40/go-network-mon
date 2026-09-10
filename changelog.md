@@ -8,6 +8,7 @@
 - Changed readme for import notice
 - changed git ignore to exclude binary files
 - changing docker files to include both arm and amd64 architecture
+- running workflow
 
 
 ### Added:
