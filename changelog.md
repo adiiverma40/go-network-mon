@@ -1,6 +1,6 @@
 # Changelog
 
-## [unreleased]
+## 1.0.1
 
 ### Changes:
 - Changed the repo name to small letters to stop failing the workflow
