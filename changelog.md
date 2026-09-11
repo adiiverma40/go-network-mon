@@ -1,5 +1,14 @@
 # Changelog
 
+## [unreleased]
+
+### Develop
+- Pulled from main branch
+
+
+### Docs
+- Added docs for the new way to detect the actual and high data usages, read `docs/datacollection`
+
 ## 1.0.1
 
 ### Changes:

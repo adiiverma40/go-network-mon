@@ -5,6 +5,15 @@ This docs contains the explantion and my choices for data collection algo, how i
 The Following project will majorly Be for **Linux**. I dont have a windows machine, neither do i plan to use it, So i wont support it.
 
 
+## Decleartion
+- I am very bad at remebering the spellings. If you see any spelling mistakes, ignore them, or if you want u can correct them, but i wont suggest you to waste your time correcting my spellings
+- `Manual speedtest` : manual speed test means the speed test where the program will do the speedtest to some external API,
+
+
+## Abbreviation
+- `no.` : Number
+- `btw`: Between
+
 ## Network stats
 
 I was considering just running a network test everytime in a specif interval. But running additional speed test is waste when the host machine actually take care of that.
@@ -41,3 +50,42 @@ These might be some solutions that maybe help in blind Spots.
 - `Localhost`: instead of monitoring every network interface, monitor the physical interface like wlan0. If for sometime there is no activity in the interface, run a ping test and then speed test. 
 
 
+
+## Reading /proc file 
+
+The reading will be done in background, it will read all the data and store them in seperate table in database, making them easy to see the past data. 
+The primary goal of this is to reduce the data wasted in doing manual speed test everytime. 
+
+I will have to figure out many things, things like how will the I will be able to accurately choose which data to choose for the baseline, the baseline will be the line that will tell the scrip to run the manual speed test.
+
+I could use Some math functions to decide the baseline but i dont know yet. 
+
+
+## Ping test 
+
+The script will do primary two ping test. One `external ping test` and `Internal ping test`.
+
+### Internal Ping test
+
+The ping test will be done on the `captive portal` The portal which is used for logging in the wifi and getting internet access. 
+This ping test will be used to determine weather the no. of connected device is high or the internet is throtlled. 
+
+### External Ping test
+
+Ping tests to `1.1.1.1` or `8.8.8.8` Will be used to determine if the internet is throtlled or not.
+
+
+## Why two ping tests?
+
+1. **Better Reasoning**: Without two distinct ping test the program will not be able to determine if the ISP is throttling or the no. of user is high.
+    - Ping to Internal: Measures the health of the local Wi-Fi and the hostel router.
+    - Ping to External: Measures the health of the college's actual ISP connection.
+
+2. ML likes to have `delta` : The difference btw internal and external ping will be good for machine learnign, as it will be able to associate with the reason better.
+
+    - Bad internal ping: The reason will most likely high student connected.
+    - Good external ping: If the internal ping is higher but external ping is lower. The reasons could be that the high priority user is such as office workers are using more wifi bandwith and the server/router is proriting that over normal students 
+    - Bad external ping: ISP throtlled.
+
+
+3. Checks for login : The internal ping will be better way to tell if the wifi is still authenticated rather then requesting a `204`
