@@ -89,3 +89,12 @@ Ping tests to `1.1.1.1` or `8.8.8.8` Will be used to determine if the internet i
 
 
 3. Checks for login : The internal ping will be better way to tell if the wifi is still authenticated rather then requesting a `204`
+
+
+## Ping test usages 
+
+Ping test can be used for many things, the things i have in the mind right now are :
+
+1. `Captive Portal Illusion`: some times the router lets pass the ping or DNS requests but block the tcp connection, in case of where the login has timedout and used ping test to determine where user is idle or not it will fails, as the ping might be 20ms but timedout, in that case run the speed test if it fails then run the re login script
+
+

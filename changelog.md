@@ -8,6 +8,9 @@
 
 ### Docs
 - Added docs for the new way to detect the actual and high data usages, read `docs/datacollection`
+- Added docs for ping test
+
+---
 
 ## 1.0.1
 
