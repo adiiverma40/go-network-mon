@@ -9,7 +9,12 @@
 ### Docs
 - Added docs for the new way to detect the actual and high data usages, read `docs/datacollection`
 - Added docs for ping test
+- Added docs for external ping, check portal, internal ping
 
+### Added
+- `External ping`: Added external ping func
+- `Check Portal` : Added a check portal using `204` status code
+- `Internal ping` : working on it,
 ---
 
 ## 1.0.1
