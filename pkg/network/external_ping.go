@@ -17,7 +17,7 @@ func PingCloudFlare() (float64 , error) {
 	var cmd *exec.Cmd
 
 	if runtime.GOOS == "windows"{
-		fmt.Errorf("Windows is not supported. Use ubuntu env inside windows using wsl")
+		return 0, fmt.Errorf("Windows is not supported. Use ubuntu env inside windows using wsl")
 
 	} else {
 		cmd = exec.Command("ping", "-c", "1", "-W", "2", ip)

@@ -15,6 +15,10 @@
 - `External ping`: Added external ping func
 - `Check Portal` : Added a check portal using `204` status code
 - `Internal ping` : working on it,
+
+### Changes
+- fixed the corrected the missing return statement bug 
+
 ---
 
 ## 1.0.1
